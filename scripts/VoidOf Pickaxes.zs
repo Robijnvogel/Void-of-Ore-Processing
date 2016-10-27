@@ -17,14 +17,13 @@
 	#7 -> Platinum (Shiny)
 	#8 -> Manasteel (Mithril)
 	#9 -> Elementium
-	#10 -> Bronze 
-	#11 -> Osmium
-	#12 -> Steel (Refined Iron)
-	#13 -> Boron
-	#14 -> Thaumium
-	#15 -> Void metal
-	#16 -> Electrum
-	#19 -> Aluminum	
+	#10 -> Osmium
+	#11 -> Steel (Refined Iron)
+	#12 -> Boron
+	#13 -> Thaumium
+	#14 -> Void metal
+	#15 -> Electrum
+	#16 -> Aluminum	
 
 	var oreDictIngots = [ <ore:ingotIron>,
 		<ore:ingotGold>,
@@ -39,7 +38,6 @@
 		<ore:ingotBronze>,
 		<ore:ingotOsmium>,
 		<ore:ingotSteel>,
-		<ore:ingotBoron>,
 		<ore:ingotThaumium>,
 		<ore:ingotVoid>,
 		<ore:ingotElectrum>,
@@ -61,7 +59,6 @@
 		<ore:nuggetBronze>,
 		<ore:nuggetOsmium>,
 		<ore:nuggetSteel>,
-		<ore:nuggetBoron>,
 		<ore:nuggetThaumium>,
 		<ore:nuggetVoid>,
 		<ore:nuggetElectrum>,
@@ -70,7 +67,6 @@
 		<ore:nuggetAluminum>
 	] as IIngredient[];
 	
-	#Gerwin, please finish this array first, then edit the above two arrays to fit this one
 	var pickaxes = [ <minecraft:iron_pickaxe>,
 		<minecraft:golden_pickaxe>,
 		<ThermalFoundation:tool.pickaxeCopper>,
@@ -84,15 +80,12 @@
 		<IC2:itemToolBronzePickaxe>, #250 Durability
 		<MekanismTools:OsmiumPickaxe>,
 		<MekanismTools:SteelPickaxe>,
-		<NuclearCraft:boronPickaxe>,
 		<Thaumcraft:ItemPickThaumium>,
 		<Thaumcraft:ItemPickVoid>,
 		<ThermalFoundation:tool.pickaxeElectrum>,
 		<ThermalFoundation:tool.pickaxeBronze>, #500 Durability.
 		<MekanismTools:BronzePickaxe>, #800 Durability.
 		<minecraft:iron_pickaxe>, #aluminium
-		<Forestry:bronzePickaxe>, #200 Durability and repairability, but crafting disabled
-		<NuclearCraft:bronzePickaxe> #300 Durability, but crafting disabled
 	] as IItemStack[];
 
 #Recipe removal
@@ -109,5 +102,5 @@
 				[null, <ore:stickWood>, null],
 				[null, <ore:stickWood>, null]]);
 		}
-#Bronze Pickaxe is a quintuplicate and has three different stages of durability that are determined by the crafting ingredients. The other two versions are disabled.
+#Bronze Pickaxe is a triplicate and has three different stages of durability that are determined by the crafting ingredients.
 #Aluminium can be used to craft iron pickaxes.
