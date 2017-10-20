@@ -23,9 +23,10 @@
 	#8 -> Bronze
 	#9 -> Osmium
 	#10 -> Steel (Refined Iron)
-	#11 -> Thaumium
-	#12 -> Void metal
-	#13 -> Electrum
+	#11 -> Boron
+	#12 -> Thaumium
+	#13 -> Void metal
+	#14 -> Electrum
 	
 	var oreDictIngots = [ <ore:ingotIron>,
 		<ore:ingotGold>,
@@ -38,9 +39,11 @@
 		<ore:ingotBronze>,
 		<ore:ingotOsmium>,
 		<ore:ingotSteel>,
+		<ore:ingotBoron>,
 		<ore:ingotThaumium>,
 		<ore:ingotVoid>,
 		<ore:ingotElectrum>
+		#bronze?
 		#bronze?
 		#bronze?
 	] as IIngredient[];
@@ -56,9 +59,11 @@
 		<ore:nuggetBronze>,
 		<ore:nuggetOsmium>,
 		<ore:nuggetSteel>,
+		<ore:nuggetBoron>,
 		<ore:nuggetThaumium>,
 		<ore:nuggetVoid>,
 		<ore:nuggetElectrum>
+		#bronze?
 		#bronze?
 		#bronze?
 	] as IIngredient[];
@@ -74,11 +79,13 @@
 		<IC2:itemArmorBronzeHelmet>,
 		<MekanismTools:OsmiumHelmet>,
 		<MekanismTools:SteelHelmet>,
+		<NuclearCraft:boronHelm>,
 		<Thaumcraft:ItemHelmetThaumium>,
 		<Thaumcraft:ItemHelmetVoid>,
 		<ThermalFoundation:armor.helmetElectrum>,
 		<ThermalFoundation:armor.helmetBronze>, #Extra Bronze 1
-		<MekanismTools:BronzeHelmet> #Extra Bronze 2
+		<MekanismTools:BronzeHelmet>, #Extra Bronze 2
+		<NuclearCraft:bronzeHelm> #Extra Bronze 3
 	] as IItemStack[];
 	
 	var chestplates = [ <minecraft:iron_chestplate>,
@@ -92,11 +99,13 @@
 		<IC2:itemArmorBronzeChestplate>,
 		<MekanismTools:OsmiumChestplate>,
 		<MekanismTools:SteelChestplate>,
+		<NuclearCraft:boronChest>,
 		<Thaumcraft:ItemChestplateThaumium>,
 		<Thaumcraft:ItemChestplateVoid>,
 		<ThermalFoundation:armor.plateElectrum>,
 		<ThermalFoundation:armor.plateBronze>, #Extra Bronze 1
-		<MekanismTools:BronzeChestplate> #Extra Bronze 2
+		<MekanismTools:BronzeChestplate>, #Extra Bronze 2
+		<NuclearCraft:bronzeChest> #Extra Bronze 3
 	] as IItemStack[];
 	
 	var leggings = [ <minecraft:iron_leggings>,
@@ -110,11 +119,13 @@
 		<IC2:itemArmorBronzeLegs>,
 		<MekanismTools:OsmiumLeggings>,
 		<MekanismTools:SteelLeggings>,
+		<NuclearCraft:boronLegs>,
 		<Thaumcraft:ItemLeggingsThaumium>,
 		<Thaumcraft:ItemLeggingsVoid>,
 		<ThermalFoundation:armor.legsElectrum>,
 		<ThermalFoundation:armor.legsBronze>, #Extra Bronze 1
-		<MekanismTools:BronzeLeggings> #Extra Bronze 2
+		<MekanismTools:BronzeLeggings>, #Extra Bronze 2
+		<NuclearCraft:bronzeLegs> #Extra Bronze 3
 	] as IItemStack[];
 	
 	var boots = [ <minecraft:iron_boots>,
@@ -128,11 +139,13 @@
 		<IC2:itemArmorBronzeBoots>,
 		<MekanismTools:OsmiumBoots>,
 		<MekanismTools:SteelBoots>,
+		<NuclearCraft:boronBoots>,
 		<Thaumcraft:ItemBootsThaumium>,
 		<Thaumcraft:ItemBootsVoid>,
 		<ThermalFoundation:armor.bootsElectrum>,
 		<ThermalFoundation:armor.bootsBronze>, #Extra Bronze 1
-		<MekanismTools:BronzeBoots> #Extra Bronze 2
+		<MekanismTools:BronzeBoots>, #Extra Bronze 2
+		<NuclearCraft:bronzeHelm> #Extra Bronze 3
 	] as IItemStack[];
 	
 #Recipe removal
