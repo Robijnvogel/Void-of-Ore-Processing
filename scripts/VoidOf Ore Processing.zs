@@ -37,13 +37,13 @@
 	#7 -> Platinum (Shiny)
 	#8 -> Mithril (ManaSteel)
 	#9 -> Aluminium
-	#10 -> Osmium
-	#11 -> Dark Iron
-	#12 ->
-	#13 -> 
-	#14 -> 
-	#15 -> 
-	#16 -> 
+	#10 -> Uranium
+	#11 -> Osmium
+	#12 -> Dark Iron
+	#13 -> Boron
+	#14 -> Lithium
+	#15 -> Magnesium
+	#16 -> Thorium
 	#17 -> 
 	#18 -> 
 
@@ -57,8 +57,15 @@
 		<ore:orePlatinum>,
 		<ore:oreMithril>,
 		<ore:oreAluminum>,
+		<ore:oreUranium>,
 		<ore:oreOsmium>,
-		<ore:oreFzDarkIron>
+		<ore:oreFzDarkIron>,
+		<ore:oreBoron>,
+		<ore:oreLithium>,
+		<ore:oreMagnesium>,
+		<ore:oreThorium>,
+		<ore:oreOctine>,
+		<ore:oreSyrmorite>
 	] as IIngredient[];
 
 	var oredictDusts = [ <ore:dustIron>,
@@ -71,8 +78,15 @@
 		<ore:dustPlatinum>,
 		<ore:dustMithril>,
 		<ore:dustAluminum>,
+		<ore:dustUranium>,
 		<ore:dustOsmium>,
-		<ore:dustFzDarkIron>
+		<ore:dustFzDarkIron>,
+		<ore:dustBoron>,
+		<ore:dustLithium>,
+		<ore:dustMagnesium>,
+		<ore:dustThorium>,
+		<ore:dustOctine>,
+		<ore:dustSyrmorite>
 	] as IIngredient[];
 
 	var oreDictIngots = [ <ore:ingotIron>,
@@ -85,8 +99,15 @@
 		<ore:ingotPlatinum>,
 		<ore:ingotMithril>,
 		<ore:ingotAluminum>,
+		<ore:ingotUranium>,
 		<ore:ingotOsmium>,
-		<ore:ingotFzDarkIron>
+		<ore:ingotFzDarkIron>,
+		<ore:ingotBoron>,
+		<ore:ingotLithium>,
+		<ore:ingotMagnesium>,
+		<ore:ingotThorium>,
+		<ore:ingotOctine>,
+		<ore:ingotSyrmorite>
 	] as IIngredient[];
 
 	var oreDictNuggets = [ <ore:nuggetIron>,
@@ -99,8 +120,15 @@
 		<ore:nuggetPlatinum>,
 		<ore:nuggetMithril>,
 		<ore:nuggetAluminum>,
+		<ore:nuggetUranium>,
 		<ore:nuggetOsmium>,
-		<ore:nuggetFzDarkIron>
+		<ore:nuggetFzDarkIron>,
+		<ore:nuggetBoron>,
+		<ore:nuggetLithium>,
+		<ore:nuggetMagnesium>,
+		<ore:nuggetThorium>,
+		<ore:nuggetOctine>,
+		<ore:nuggetSyrmorite>
 	] as IIngredient[];
 	
 	var oreDictBlocks = [ <ore:blockIron>,
@@ -113,8 +141,15 @@
 		<ore:blockPlatinum>,
 		<ore:blockMithril>,
 		<ore:blockAluminum>,
+		<ore:blockUranium>,
 		<ore:blockOsmium>,
-		<ore:blockFzDarkIron>
+		<ore:blockFzDarkIron>,
+		<ore:blockBoron>,
+		<ore:blockLithium>,
+		<ore:blockMagnesium>,
+		<ore:blockThorium>,
+		<ore:blockOctine>,
+		<ore:blockSyrmorite>
 	] as IIngredient[];
 
 	var tfOres = [ <minecraft:iron_ore>,
@@ -126,9 +161,16 @@
 		<ThermalFoundation:Ore:4>, #nickel
 		<ThermalFoundation:Ore:5>, #platinum
 		<ThermalFoundation:Ore:6>, #mithril
-		<TConstruct:SearedBrick:5>, #aluminium
+		<ImmersiveEngineering:ore:1>, #aluminium
+		<NuclearCraft:blockOre:4>, #uranium
 		<Mekanism:OreBlock>, #osmium
-		<factorization:DarkIronOre>
+		<factorization:DarkIronOre>,
+		<NuclearCraft:blockOre:8>, #boron
+		<NuclearCraft:blockOre:7>, #lithium
+		<NuclearCraft:blockOre:9>, #magnesium
+		<NuclearCraft:blockOre:5>, #thorium
+		<thebetweenlands:octineOre>,
+		<thebetweenlands:syrmoriteOre>
 	] as IItemStack[];
 
 	var tfNuggets = [ <ThermalFoundation:material:8>, #iron
@@ -140,9 +182,16 @@
 		<ThermalFoundation:material:100>, #nickel
 		<ThermalFoundation:material:101>, #platinum
 		<ThermalFoundation:material:102>, #mithril
-		<TConstruct:materials:22>, #aluminium
+		<ImmersiveEngineering:metal:23>, #aluminium
+		<IC2:itemUran235small>, #uranium
 		<aobd:nuggetOsmium>,
-		<aobd:nuggetFzDarkIron>
+		<aobd:nuggetFzDarkIron>,
+		<aobd:nuggetBoron>,
+		<aobd:nuggetLithium>,
+		<aobd:nuggetMagnesium>,
+		<aobd:nuggetThorium>,
+		<aobd:nuggetOctine>,
+		<aobd:nuggetSyrmorite>
 	] as IItemStack[];
 
 	var ic2Ingots = [ <minecraft:iron_ingot>,
@@ -154,9 +203,16 @@
 		<ThermalFoundation:material:68>, #nickel
 		<ThermalFoundation:material:69>, #platinum
 		<ThermalFoundation:material:70>, #mithril
-		<TConstruct:materials:11>, #aluminium
+		<ImmersiveEngineering:metal:1>, #aluminium
+		<NuclearCraft:material:4>, #uranium
 		<Mekanism:Ingot:1>, #osmium
-		<factorization:dark_iron_ingot>
+		<factorization:dark_iron_ingot>, #dark iron
+		<NuclearCraft:material:43>, #boron
+		<NuclearCraft:material:42>, #lithium
+		<NuclearCraft:material:50>, #magnesium
+		<NuclearCraft:material:5>, #thorium
+		<thebetweenlands:unknownGeneric:15>, #octine
+		<thebetweenlands:unknownGeneric:14> #syrmorite
 	] as IItemStack[];
 
 	var tfBlocks = [ <minecraft:iron_block>,
@@ -168,9 +224,16 @@
 		<ThermalFoundation:Storage:4>, #nickel
 		<ThermalFoundation:Storage:5>, #platinum
 		<ThermalFoundation:Storage:6>, #mithril
-		<TConstruct:MetalBlock:6>, #aluminium
+		<ImmersiveEngineering:storage:1>, #aluminium
+		<NuclearCraft:blockBlock:4>, #uranium
 		<Mekanism:BasicBlock>, #osmium
-		<factorization:ResourceBlock:3> #dark iron
+		<factorization:ResourceBlock:3>, #dark iron
+		<NuclearCraft:blockBlock:9>, #boron
+		<NuclearCraft:blockBlock:8>, #lithium
+		<NuclearCraft:blockBlock:10>, #magnesium
+		<NuclearCraft:blockBlock:5>, #thorium
+		<thebetweenlands:octineBlock>,
+		<thebetweenlands:syrmoriteBlock>
 	] as IItemStack[];
 
 	var ic2Dusts = [ <IC2:itemDust:5>, #iron
@@ -179,12 +242,19 @@
 		<IC2:itemDust:7>, #tin
 		<IC2:itemDust:6>, #silver
 		<IC2:itemDust:10>, #lead
-		<ThermalFoundation:material:36>, #nickel
+		<ImmersiveEngineering:metal:14>, #nickel
 		<ThermalFoundation:material:37>, #platinum
 		<ThermalFoundation:material:38>, #mithril
-		<TConstruct:materials:40>, #aluminium
+		<ImmersiveEngineering:metal:11>, #aluminium
+		<NuclearCraft:material:19>, #uranium
 		<Mekanism:Dust:2>, #osmium
-		<aobd:dustFzDarkIron>
+		<aobd:dustFzDarkIron>,
+		<NuclearCraft:material:45>, #boron
+		<IC2:itemDust:14>, #lithium
+		<NuclearCraft:material:51>, #magnesium
+		<NuclearCraft:material:20>, #thorium
+		<aobd:dustOctine>,
+		<aobd:dustSyrmorite>
 	] as IItemStack[];
 
 	var ic2TinyDusts = [ <IC2:itemDustSmall>, #iron
@@ -196,9 +266,16 @@
 		<aobd:dustTinyNickel>,
 		<aobd:dustTinyPlatinum>,
 		<aobd:dustTinyMithril>,
-		<aobd:dustTinyAluminium>, #aluminium
+		<aobd:dustTinyAluminum>, #aluminium
+		<aobd:dustTinyUranium>,
 		<aobd:dustTinyOsmium>,
-		<aobd:dustTinyFzDarkIron>
+		<aobd:dustTinyFzDarkIron>,
+		<aobd:dustTinyBoron>,
+		<IC2:itemDustSmall:7>, #lithium
+		<aobd:dustTinyMagnesium>,
+		<aobd:dustTinyThorium>,
+		<aobd:dustTinyOctine>,
+		<aobd:dustTinySyrmorite>
 	] as IItemStack[];
 
 	var ic2Crushed = [ <IC2:itemCrushedOre>, #iron
@@ -210,9 +287,16 @@
 		<aobd:crushedNickel>, #nickel
 		<aobd:crushedPlatinum>, #platinum
 		<aobd:crushedMithril>, #mithril
-		<aobd:crushedAluminium>, #aluminium
+		<aobd:crushedAluminum>, #aluminium
+		<IC2:itemCrushedOre:4>, #uranium
 		<aobd:crushedOsmium>, #osmium
-		<aobd:crushedFzDarkIron>
+		<aobd:crushedFzDarkIron>, #dark iron
+		<aobd:crushedBoron>, #boron
+		<aobd:crushedLithium>, #lithium
+		<aobd:crushedMagnesium>, #magnesium
+		<aobd:crushedThorium>,
+		<aobd:crushedOctine>,
+		<aobd:crushedSyrmorite>
 	] as IItemStack[];
 
 	var ic2CrushedPurified = [ <IC2:itemPurifiedCrushedOre>, #iron
@@ -224,9 +308,16 @@
 		<aobd:crushedPurifiedNickel>, #nickel
 		<aobd:crushedPurifiedPlatinum>, #platinum
 		<aobd:crushedPurifiedMithril>, #mithril
-		<aobd:crushedPurifiedAluminium>, #aluminium
+		<aobd:crushedPurifiedAluminum>, #aluminium
+		<IC2:itemPurifiedCrushedOre:4>, #uranium
 		<aobd:crushedPurifiedOsmium>, #osmium
-		<aobd:crushedPurifiedFzDarkIron>
+		<aobd:crushedPurifiedFzDarkIron>, #dark iron
+		<aobd:crushedPurifiedBoron>, #boron
+		<aobd:crushedPurifiedLithium>, #lithium
+		<aobd:crushedPurifiedMagnesium>, #magnesium
+		<aobd:crushedPurifiedThorium>,
+		<aobd:crushedPurifiedOctine>,
+		<aobd:crushedPurifiedSyrmorite>
 	] as IItemStack[];
 
 	var mkClumps = [ <Mekanism:Clump>, #iron
@@ -238,9 +329,16 @@
 		<aobd:clumpNickel>, #nickel
 		<aobd:clumpPlatinum>, #platinum
 		<aobd:clumpMithril>, #mithril
-		<aobd:clumpAluminium>, #aluminium
+		<aobd:clumpAluminum>, #aluminium
+		<aobd:clumpUranium>, #uranium
 		<Mekanism:Clump:2>, #osmium
-		<aobd:clumpFzDarkIron>
+		<aobd:clumpFzDarkIron>, #dark iron
+		<aobd:clumpBoron>, #boron
+		<aobd:clumpLithium>, #lithium
+		<aobd:clumpMagnesium>, #magnesium
+		<aobd:clumpThorium>,
+		<aobd:clumpOctine>,
+		<aobd:clumpSyrmorite>
 	] as IItemStack[];
 
 	var mkCrystals = [<Mekanism:Crystal>, #iron
@@ -252,9 +350,16 @@
 		<aobd:crystalNickel>, #nickel
 		<aobd:crystalPlatinum>, #platinum
 		<aobd:crystalMithril>, #mithril
-		<aobd:crystalAluminium>, #aluminium
+		<aobd:crystalAluminum>, #aluminium
+		<aobd:crystalUranium>, #uranium
 		<Mekanism:Crystal:2>, #osmium
-		<aobd:crystalFzDarkIron>
+		<aobd:crystalFzDarkIron>, #dark iron
+		<aobd:crystalBoron>, #boron
+		<aobd:crystalLithium>, #lithium
+		<aobd:crystalMagnesium>, #magnesium
+		<aobd:crystalThorium>,
+		<aobd:crystalOctine>,
+		<aobd:crystalSyrmorite>
 	] as IItemStack[];
 
 	var mkShards = [ <Mekanism:Shard>, #iron
@@ -266,9 +371,16 @@
 		<aobd:shardNickel>, #nickel
 		<aobd:shardPlatinum>, #platinum
 		<aobd:shardMithril>, #mithril
-		<aobd:shardAluminium>, #aluminium
+		<aobd:shardAluminum>, #aluminium
+		<aobd:shardUranium>, #uranium
 		<Mekanism:Shard:2>, #osmium
-		<aobd:shardFzDarkIron>
+		<aobd:shardFzDarkIron>, #dark iron
+		<aobd:shardBoron>, #boron
+		<aobd:shardLithium>, #lithium
+		<aobd:shardMagnesium>, #magnesium
+		<aobd:shardThorium>,
+		<aobd:shardOctine>,
+		<aobd:shardSyrmorite>
 	] as IItemStack[];
 
 	var mkDirtyDusts = [ <Mekanism:DirtyDust>, #iron
@@ -280,9 +392,16 @@
 		<aobd:dustDirtyNickel>, #nickel
 		<aobd:dustDirtyPlatinum>, #platinum
 		<aobd:dustDirtyMithril>, #mithril
-		<aobd:dustDirtyAluminium>, #aluminium
+		<aobd:dustDirtyAluminum>, #aluminium
+		<aobd:dustDirtyUranium>, #uranium
 		<Mekanism:DirtyDust:2>, #osmium
-		<aobd:dustDirtyFzDarkIron>
+		<aobd:dustDirtyFzDarkIron>, #dark iron
+		<aobd:dustDirtyBoron>, #boron
+		<aobd:dustDirtyLithium>, #lithium
+		<aobd:dustDirtyMagnesium>, #magnesium
+		<aobd:dustDirtyThorium>,
+		<aobd:dustDirtyOctine>,
+		<aobd:dustDirtySyrmorite>
 	] as IItemStack[];
 
 	var mkSlurries = [ <gas:iron>,
@@ -294,9 +413,16 @@
 		<gas:Nickel>,
 		<gas:Platinum>,
 		<gas:Mithril>,
-		<gas:Aluminium>,
+		<gas:Aluminum>,
+		<gas:Uranium>,
 		<gas:osmium>,
-		<gas:FzDarkIron>
+		<gas:FzDarkIron>,
+		<gas:Boron>,
+		<gas:Lithium>,
+		<gas:Magnesium>,
+		<gas:Thorium>,
+		<gas:Octine>,
+		<gas:Syrmorite>
 	] as IGasStack[];
 
 	var mkCleanSlurries = [ <gas:cleanIron>,
@@ -308,9 +434,16 @@
 		<gas:cleanNickel>,
 		<gas:cleanPlatinum>,
 		<gas:cleanMithril>,
-		<gas:cleanAluminium>,
+		<gas:cleanAluminum>,
+		<gas:cleanUranium>,
 		<gas:cleanOsmium>,
-		<gas:cleanFzDarkIron>
+		<gas:cleanFzDarkIron>,
+		<gas:cleanBoron>,
+		<gas:cleanLithium>,
+		<gas:cleanMagnesium>,
+		<gas:cleanThorium>,
+		<gas:cleanOctine>,
+		<gas:cleanSyrmorite>
 	] as IGasStack[];
 
 	var tfISmelterRichChances = [ 5, #iron
@@ -323,8 +456,15 @@
 		30, #platinum
 		15, #mithril
 		5, #aluminium
+		15, #uranium
 		15, #osmium
-		5 #dark iron
+		5, #dark iron
+		5, #boron
+		5, #lithium
+		5, #magnesium
+		5, #thorium
+		10, #octine
+		10, #syrmorite
 	] as int[];
 
 	var tfISmelterSecondaries = [ <ThermalFoundation:material:100>, #iron -> nickel
@@ -336,9 +476,16 @@
 		<ThermalFoundation:material:101>, #nickel -> platinum
 		<ThermalExpansion:material:515>, #platinum -> rich slag
 		<ThermalExpansion:material:515>, #mithril -> rich slag
-		<TConstruct:materials:22>, #aluminium -> aluminium
+		<ImmersiveEngineering:metal:23>, #aluminium -> aluminium
+		<IC2:itemUran235small>, #uranium -> uranium
 		<aobd:nuggetOsmium>, #osmium -> osmium
-		<ThermalFoundation:material:98> #dark iron -> silver
+		<ThermalFoundation:material:98>, #dark iron -> silver
+		<aobd:nuggetBoron>, #boron -> boron
+		<aobd:nuggetLithium>, #lithium -> lithium
+		<aobd:nuggetMagnesium>, #magnesium -> magnesium
+		<aobd:nuggetThorium>, #thorium -> thorium
+		<aobd:nuggetSyrmorite>, #octine -> syrmorite
+		<aobd:nuggetOctine> #syrmorite -> octine
 	] as IItemStack[];
 	
 	var tfISmelterSecChances = [ 100, #iron
@@ -351,8 +498,15 @@
 		75, #platinum
 		75, #mithril
 		100, #aluminium
+		100, #uranium
 		100, #osmium
-		100 #dark iron
+		100, #dark iron
+		100, #boron
+		100, #lithium
+		100, #magnesium
+		100, #thorium
+		75, #octine
+		75 #syrmorite
 	] as int[];
 	
 	var tfPulvSecondaries = [ <aobd:dustTinyNickel>, #iron -> nickel
@@ -364,9 +518,16 @@
 		<aobd:dustTinyPlatinum>, #nickel -> platinum
 		<ThermalFoundation:material:20>, #platinum -> cinnabar
 		<ThermalFoundation:material:20>, #mithril -> cinnabar
-		<aobd:dustTinyAluminium>, #aluminium -> aluminium
+		<aobd:dustTinyAluminum>, #aluminium -> aluminium
+		<aobd:dustTinyUranium>, #uranium -> uranium
 		<aobd:dustTinyOsmium>, #osmium -> osmium
-		<IC2:itemDustSmall:4> #dark iron -> silver
+		<IC2:itemDustSmall:4>, #dark iron -> silver
+		<aobd:dustTinyBoron>, #boron -> boron
+		<IC2:itemDustSmall:7>, #lithium -> lithium
+		<aobd:dustTinyMagnesium>, #magnesium -> magnesium
+		<aobd:dustTinyThorium>, #thorium -> thorium
+		<aobd:dustTinySyrmorite>, #octine -> syrmorite
+		<aobd:dustTinyOctine> #syrmorite -> octine
 	] as IItemStack[];
 	
 	var tfPulvSecondaryChances = [ 10, #iron
@@ -379,8 +540,15 @@
 		10, #platinum
 		5, #mithril
 		10, #aluminium
+		10, #uranium
 		10, #osmium
-		10 #dark iron
+		10, #dark iron
+		10, #boron
+		10, #lithium
+		10, #magnesium
+		10, #thorium
+		10, #octine
+		10 #syrmorite
 	] as int[];
 	
 	var ic2ThermCentSecondaries = [ <aobd:dustTinyNickel>, #iron -> ferrous
@@ -393,8 +561,15 @@
 		<aobd:dustTinyPlatinum>, #platinum
 		<aobd:dustTinyMithril>, #mithril
 		<IC2:itemDustSmall:3>, #aluminium -> tin
+		<aobd:dustTinyUranium>, #uranium
 		<aobd:dustTinyOsmium>, #osmium
-		<aobd:dustTinyFzDarkIron> #dark iron
+		<aobd:dustTinyFzDarkIron>, #dark iron
+		<aobd:dustTinyBoron>, #boron
+		<IC2:itemDustSmall:7>, #lithium
+		<aobd:dustTinyMagnesium>, #magnesium
+		<aobd:dustTinyThorium>, #thorium
+		<aobd:dustTinySyrmorite>, #octine -> syrmorite
+		<aobd:dustTinyOctine> #syrmorite -> octine
 	] as IItemStack[];
 
 	var tcClusters = [ <Thaumcraft:ItemNugget:16>, #Iron
@@ -403,12 +578,19 @@
 		<Thaumcraft:ItemNugget:18>, #tin
 		<Thaumcraft:ItemNugget:19>, #silver
 		<Thaumcraft:ItemNugget:20>, #lead
-		<aobd:clusterNickel>, #nickel
-		<aobd:clusterPlatinum>, #platinum
-		<aobd:clusterMithril>, #mithril
-		<aobd:clusterAluminium>, #aluminium
+		<WitchingGadgets:item.WG_Cluster:3>, #nickel
+		<WitchingGadgets:item.WG_Cluster:7>, #platinum
+		<WitchingGadgets:item.WG_Cluster:24>, #mithril
+		<WitchingGadgets:item.WG_Cluster>, #aluminium
+		<aobd:clusterUranium>, #uranium
 		<aobd:clusterOsmium>, #osmium
-		<aobd:clusterFzDarkIron> #dark iron
+		<aobd:clusterFzDarkIron>, #dark iron
+		<aobd:clusterBoron>, #boron
+		<aobd:clusterLithium>, #lithium
+		<aobd:clusterMagnesium>, #magnesium
+		<aobd:clusterThorium>,
+		<aobd:clusterOctine>,
+		<aobd:clusterSyrmorite>
 	] as IItemStack[];
 
 	var fzCrystallines = [ <factorization:ore/crystal>, #Iron
@@ -420,9 +602,16 @@
 		<aobd:crystallineNickel>, #nickel
 		<aobd:crystallinePlatinum>, #platinum
 		<aobd:crystallineMithril>, #mithril
-		<aobd:crystallineAluminium>, #aluminium
+		<aobd:crystallineAluminum>, #aluminium
+		<aobd:crystallineUranium>, #uranium
 		<aobd:crystallineOsmium>, #osmium
-		<factorization:ore/crystal:10> #dark iron
+		<factorization:ore/crystal:10>, #dark iron
+		<aobd:crystallineBoron>, #boron
+		<aobd:crystallineLithium>, #lithium
+		<aobd:crystallineMagnesium>, #magnesium
+		<aobd:crystallineThorium>,
+		<aobd:crystallineOctine>,
+		<aobd:crystallineSyrmorite>
 	] as IItemStack[];
 
 	var fzCleanGravels = [ <factorization:ore/clean>, #Iron
@@ -434,9 +623,16 @@
 		<aobd:cleanGravelNickel>, #nickel
 		<aobd:cleanGravelPlatinum>, #platinum
 		<aobd:cleanGravelMithril>, #mithril
-		<aobd:cleanGravelAluminium>, #aluminium
+		<aobd:cleanGravelAluminum>, #aluminium
+		<aobd:cleanGravelUranium>, #uranium
 		<aobd:cleanGravelOsmium>, #osmium
-		<factorization:ore/clean:10> #dark iron
+		<factorization:ore/clean:10>, #dark iron
+		<aobd:cleanGravelBoron>, #boron
+		<aobd:cleanGravelLithium>, #lithium
+		<aobd:cleanGravelMagnesium>, #magnesium
+		<aobd:cleanGravelThorium>,
+		<aobd:cleanGravelOctine>,
+		<aobd:cleanGravelSyrmorite>
 	] as IItemStack[];
 
 	var fzReducedChunks = [ <factorization:ore/reduced>, #Iron
@@ -448,9 +644,16 @@
 		<aobd:reducedNickel>, #nickel
 		<aobd:reducedPlatinum>, #platinum
 		<aobd:reducedMithril>, #mithril
-		<aobd:reducedAluminium>, #aluminium
+		<aobd:reducedAluminum>, #aluminium
+		<aobd:reducedUranium>, #uranium
 		<aobd:reducedOsmium>, #osmium
-		<factorization:ore/reduced:10> #dark iron
+		<factorization:ore/reduced:10>, #dark iron
+		<aobd:reducedBoron>, #boron
+		<aobd:reducedLithium>, #lithium
+		<aobd:reducedMagnesium>, #magnesium
+		<aobd:reducedThorium>,
+		<aobd:reducedOctine>,
+		<aobd:reducedSyrmorite>
 	] as IItemStack[];
 
 	var fzDirtyGravels = [ <factorization:ore/gravel>, #Iron
@@ -462,9 +665,16 @@
 		<aobd:dirtyGravelNickel>, #nickel
 		<aobd:dirtyGravelPlatinum>, #platinum
 		<aobd:dirtyGravelMithril>, #mithril
-		<aobd:dirtyGravelAluminium>, #aluminium
+		<aobd:dirtyGravelAluminum>, #aluminium
+		<aobd:dirtyGravelUranium>, #uranium
 		<aobd:dirtyGravelOsmium>, #osmium
-		<factorization:ore/gravel:10> #dark iron
+		<factorization:ore/gravel:10>, #dark iron
+		<aobd:dirtyGravelBoron>, #boron
+		<aobd:dirtyGravelLithium>, #lithium
+		<aobd:dirtyGravelMagnesium>, #magnesium
+		<aobd:dirtyGravelThorium>,
+		<aobd:dirtyGravelOctine>,
+		<aobd:dirtyGravelSyrmorite>
 	] as IItemStack[];
 
 	var tmPurified1 = [ <technom:pureIron>,
@@ -477,8 +687,15 @@
 		<technom:purePlatinum>,
 		<technom:pureMithril>,
 		<technom:pureAluminum>,
+		<technom:pureUranium>,
 		<technom:pureOsmium>,
-		<technom:pureFzDarkIron>
+		<technom:pureFzDarkIron>,
+		<technom:pureBoron>,
+		<technom:pureLithium>,
+		<technom:pureMagnesium>,
+		<technom:pureThorium>,
+		<technom:pureOctine>,
+		<technom:pureSyrmorite>
 	] as IItemStack[];
 	
 	var tmPurified2 = [ <technom:pureIron:1>,
@@ -491,8 +708,15 @@
 		<technom:purePlatinum:1>,
 		<technom:pureMithril:1>,
 		<technom:pureAluminum:1>,
+		<technom:pureUranium:1>,
 		<technom:pureOsmium:1>,
-		<technom:pureFzDarkIron:1>
+		<technom:pureFzDarkIron:1>,
+		<technom:pureBoron:1>,
+		<technom:pureLithium:1>,
+		<technom:pureMagnesium:1>,
+		<technom:pureThorium:1>,
+		<technom:pureOctine:1>,
+		<technom:pureSyrmorite:1>
 	] as IItemStack[];
 	
 	var tmPurified3 = [ <technom:pureIron:2>,
@@ -505,8 +729,15 @@
 		<technom:purePlatinum:2>,
 		<technom:pureMithril:2>,
 		<technom:pureAluminum:2>,
+		<technom:pureUranium:2>,
 		<technom:pureOsmium:2>,
-		<technom:pureFzDarkIron:2>
+		<technom:pureFzDarkIron:2>,
+		<technom:pureBoron:2>,
+		<technom:pureLithium:2>,
+		<technom:pureMagnesium:2>,
+		<technom:pureThorium:2>,
+		<technom:pureOctine:2>,
+		<technom:pureSyrmorite:2>
 	] as IItemStack[];
 	
 	var tmPurified4 = [ <technom:pureIron:3>,
@@ -519,8 +750,15 @@
 		<technom:purePlatinum:3>,
 		<technom:pureMithril:3>,
 		<technom:pureAluminum:3>,
+		<technom:pureUranium:3>,
 		<technom:pureOsmium:3>,
-		<technom:pureFzDarkIron:3>
+		<technom:pureFzDarkIron:3>,
+		<technom:pureBoron:3>,
+		<technom:pureLithium:3>,
+		<technom:pureMagnesium:3>,
+		<technom:pureThorium:3>,
+		<technom:pureOctine:3>,
+		<technom:pureSyrmorite:3>
 	] as IItemStack[];
 	
 	var tmPurified5 = [ <technom:pureIron:4>,
@@ -533,8 +771,15 @@
 		<technom:purePlatinum:4>,
 		<technom:pureMithril:4>,
 		<technom:pureAluminum:4>,
+		<technom:pureUranium:4>,
 		<technom:pureOsmium:4>,
-		<technom:pureFzDarkIron:4>
+		<technom:pureFzDarkIron:4>,
+		<technom:pureBoron:4>,
+		<technom:pureLithium:4>,
+		<technom:pureMagnesium:4>,
+		<technom:pureThorium:4>,
+		<technom:pureOctine:4>,
+		<technom:pureSyrmorite:4>
 	] as IItemStack[];
 	
 	var tmPurified6 = [ <technom:pureIron:5>,
@@ -547,8 +792,15 @@
 		<technom:purePlatinum:5>,
 		<technom:pureMithril:5>,
 		<technom:pureAluminum:5>,
+		<technom:pureUranium:5>,
 		<technom:pureOsmium:5>,
-		<technom:pureFzDarkIron:5>
+		<technom:pureFzDarkIron:5>,
+		<technom:pureBoron:5>,
+		<technom:pureLithium:5>,
+		<technom:pureMagnesium:5>,
+		<technom:pureThorium:5>,
+		<technom:pureOctine:5>,
+		<technom:pureSyrmorite:5>
 	] as IItemStack[];
 	
 #Additional lists:
@@ -557,6 +809,7 @@
 		<minecraft:gold_ore>,
 		<IC2:blockOreCopper>,
 		<IC2:blockOreTin>,
+		<IC2:blockOreUran>,
 		<IC2:blockOreLead>,
 		<Mekanism:OreBlock>,
 		<Mekanism:OreBlock:1>,
@@ -577,6 +830,7 @@
 		<minecraft:gold_nugget>, #gold
 		<ThermalFoundation:material:96>, #copper
 		<ThermalFoundation:material:97>, #tin
+		<IC2:itemUran235small>, #uranium
 		<ThermalFoundation:material:99>, #lead
 		<aobd:nuggetOsmium>, #osmium
 		<ThermalFoundation:material:96>, #copper
@@ -597,6 +851,7 @@
 		<IC2:itemDustSmall:2>, #gold
 		<IC2:itemDustSmall:1>, #copper
 		<IC2:itemDustSmall:3>, #tin
+		<aobd:dustTinyUranium>, #uranium
 		<IC2:itemDustSmall:5>, #lead
 		<aobd:dustTinyOsmium>, #osmium
 		<IC2:itemDustSmall:1>, #copper
@@ -628,6 +883,7 @@
 		<ThermalFoundation:material:101>, #platinum
 		<ThermalFoundation:material:102>, #mithril
 		<ThermalFoundation:material:105>, #bronze
+		<aobd:nuggetUranium>, #uranium
 		<aobd:nuggetFzDarkIron>, #dark iron
 		<aobd:nuggetOsmium>, #osmium
 		<IC2:itemUran235small> #uranium
@@ -649,6 +905,7 @@
 		<aobd:dustTinyPlatinum>, #platinum
 		<aobd:dustTinyMithril>, #mithril
 		<IC2:itemDustSmall:8>, #bronze
+		<aobd:dustTinyUranium>, #uranium
 		<aobd:dustTinyFzDarkIron>, #dark iron
 		<aobd:dustTinyOsmium>, #osmium
 		<aobd:dustTinyUranium> #uranium
@@ -658,9 +915,7 @@
 	#ore smelting and pulverizing
 		for i, ore in oredictOres {
 			furnace.remove(<*>, ore); #Furnace
-			recipes.removeShapeless(ic2Ingots[i],
-				[<ThermalFoundation:material:512>,
-				ore ]); #Pyrotheum
+			recipes.removeShapeless(ic2Ingots[i], [<ThermalFoundation:material:512>, ore ]); #Pyrotheum			
 			#IC2 macerator can only be overwritten, not removed, done in recipe creation step.			
 			Enrichment.removeRecipe(ore); #MK Enrichment chamber			
 			Purification.removeRecipe(mkClumps[i], ore, <gas:oxygen>); #MK purification chamber
