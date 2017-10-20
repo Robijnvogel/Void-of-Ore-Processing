@@ -1,0 +1,141 @@
+{
+	"Andesite": {
+        "template": "uniform",
+        "block": [
+			{"name": "chisel:andesite", "weight": 50},
+            {"name": "Botania:stone", "weight": 50}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 32,
+        "numClusters": 5,
+        "minHeight": 48,
+        "maxHeight": 96,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    },
+	"Basalt": {
+        "template": "uniform",
+        "block": [
+			{"name": "Botania:stone", "metadata": 1, "weight": 50},
+			{"name": "ProjRed|Exploration:projectred.exploration.stone", "metadata": 2, "weight": 50}
+		],
+        "material": "minecraft:stone",
+        "clusterSize": 40,
+        "numClusters": 1,
+        "minHeight": 48,
+        "maxHeight": 72,
+        "retrogen": "true",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+			"ATG-Volcano"
+		],
+        "dimensionRestriction": "blacklist",
+        "dimensions": []
+    },
+	"Diorite": {
+        "template": "uniform",
+        "block": [
+			{"name": "chisel:diorite", "weight": 50},
+            {"name": "Botania:stone", "metadata": 2, "weight": 50}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 32,
+        "numClusters": 5,
+        "minHeight": 48,
+        "maxHeight": 96,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    },
+	"Granite": {
+        "template": "uniform",
+        "block": [
+			{"name": "chisel:granite", "weight": 50},
+            {"name": "Botania:stone", "metadata": 3, "weight": 50}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 32,
+        "numClusters": 5,
+        "minHeight": 48,
+        "maxHeight": 96,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    },
+	"Limestone": {
+        "template": "uniform",
+        "block": "chisel:limestone",
+        "material": "minecraft:stone",
+        "clusterSize": 32,
+        "numClusters": 5,
+        "minHeight": 16,
+        "maxHeight": 64,
+        "retrogen": "true",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+			{"type": "dictionary", "entry": "OCEAN"},
+			{"type": "dictionary", "entry": "RIVER"}
+		],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    },
+	"Marble": {
+        "template": "uniform",
+        "block": [
+			{"name": "chisel:marble", "weight": 50},
+			{"name": "ProjRed|Exploration:projectred.exploration.stone", "weight": 50}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 32,
+        "numClusters": 5,
+        "minHeight": 16,
+        "maxHeight": 64,
+        "retrogen": "true",
+        "biomeRestriction": "blacklist",
+        "biomes": [
+			{"type": "dictionary", "entry": "OCEAN"},
+			{"type": "dictionary", "entry": "RIVER"}
+		],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    },
+	"RailcraftQuarriedStone": {
+        "template": "uniform",
+        "block": {"name": "Railcraft:cube", "metadata": 7},
+        "material": "minecraft:stone",
+        "clusterSize": 40,
+        "numClusters": 2,
+        "minHeight": 48,
+        "maxHeight": 72,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+			-1,
+            1
+        ]
+    }	
+}

@@ -1,0 +1,92 @@
+{
+    "gravelIron": {
+        "template": "surface",
+        "block": "TConstruct:GravelOre",
+        "clusterSize": 8,
+        "numClusters": 1,
+        "chunkChance": 400,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "gravelGold": {
+        "template": "surface",
+        "block": {"name": "TConstruct:GravelOre", "metadata": 1},
+        "clusterSize": 6,
+        "numClusters": 2,
+        "chunkChance": 900,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "gravelCopper": {
+        "template": "surface",
+        "block": {"name": "TConstruct:GravelOre", "metadata": 2},
+        "clusterSize": 8,
+        "numClusters": 1,
+        "chunkChance": 100,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "gravelTin": {
+        "template": "surface",
+        "block": {"name": "TConstruct:GravelOre", "metadata": 3},
+        "clusterSize": 8,
+        "numClusters": 1,
+        "chunkChance": 100,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "gravelAluminium": {
+        "template": "surface",
+        "block": {"name": "TConstruct:GravelOre", "metadata": 4},
+        "clusterSize": 8,
+        "numClusters": 1,
+        "chunkChance": 100,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "gravelCobalt": {
+        "template": "surface",
+        "block": {"name": "TConstruct:GravelOre", "metadata": 5},
+        "clusterSize": 4,
+        "numClusters": 1,
+        "chunkChance": 2000,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    }
+}

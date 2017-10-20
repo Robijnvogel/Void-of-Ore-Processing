@@ -1,7 +1,17 @@
 {
     "copper": {
         "template": "uniform",
-        "block": "ThermalFoundation:Ore",
+		"block": [
+			{"name": "IC2:blockOreCopper", "metadata": 0, "weight":90},
+			{"name": "ImmersiveEngineering:ore", "weight":90},
+			{"name": "Mekanism:OreBlock", "metadata": 1, "weight":90},
+			{"name": "Metallurgy:base.ore", "metadata": 0, "weight":90},
+			{"name": "ProjRed|Exploration:projectred.exploration.ore", "metadata": 3, "weight":90},
+			{"name": "Steamcraft:steamcraftOre", "metadata": 0, "weight":90},
+			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":90},
+			{"name": "ThermalFoundation:Ore", "metadata": 0, "weight":90},
+			{"name": "Railcraft:ore", "metadata": 9, "weight":80}
+		],
         "clusterSize": 8,
         "numClusters": 10,
         "minHeight": 40,
@@ -19,7 +29,15 @@
     },
     "tin": {
         "template": "uniform",
-        "block": {"name": "ThermalFoundation:Ore", "metadata": 1},
+		"block": [
+			{"name": "IC2:blockOreTin", "metadata": 0, "weight":90},
+			{"name": "Mekanism:OreBlock", "metadata": 2, "weight":90},
+			{"name": "Metallurgy:base.ore", "metadata": 1, "weight":90},
+			{"name": "ProjRed|Exploration:projectred.exploration.ore", "metadata": 4, "weight":90},
+			{"name": "TConstruct:SearedBrick", "metadata": 4, "weight":90},
+				{"name": "ThermalFoundation:Ore", "metadata": 1, "weight":90},
+				{"name": "Railcraft:ore", "metadata": 10, "weight":60}
+		],
         "clusterSize": 8,
         "numClusters": 8,
         "minHeight": 20,
@@ -38,8 +56,15 @@
     "silver": {
         "template": "uniform",
         "block": [
-            {"name": "ThermalFoundation:Ore", "metadata": 2, "weight":80},
-            {"name": "ThermalFoundation:Ore", "metadata": 3, "weight":20}
+            {"name": "factorization:ResourceBlock", "metadata": 0, "weight":48},
+			{"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":48},
+			{"name": "Metallurgy:precious.ore", "metadata": 1, "weight":48},
+			{"name": "ProjRed|Exploration:projectred.exploration.ore", "metadata": 5, "weight":48},
+			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight":48},
+			{"name": "IC2:blockOreLead", "metadata": 0, "weight":18},
+			{"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":18},
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight":18},
+			{"name": "Railcraft:ore", "metadata": 10, "weight":6}
         ],
         "clusterSize": 8,
         "numClusters": 6,
@@ -59,8 +84,15 @@
     "lead": {
         "template": "uniform",
         "block": [
-            {"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 90},
-            {"name": "ThermalFoundation:Ore", "metadata": 2, "weight": 10}
+            {"name": "IC2:blockOreLead", "metadata": 0, "weight": 72},
+			{"name": "ImmersiveEngineering:ore", "metadata": 2, "weight":72},
+			{"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 72},
+			{"name": "Railcraft:ore", "metadata": 10, "weight":24},
+			{"name": "factorization:ResourceBlock", "metadata": 0, "weight":12},
+			{"name": "ImmersiveEngineering:ore", "metadata": 3, "weight":12},
+			{"name": "Metallurgy:precious.ore", "metadata": 1, "weight":12},
+			{"name": "ProjRed|Exploration:projectred.exploration.ore", "metadata": 5, "weight":12},
+			{"name": "ThermalFoundation:Ore", "metadata": 2, "weight": 12}
         ],
         "clusterSize": 8,
         "numClusters": 8,
@@ -79,7 +111,10 @@
     },
     "nickel": {
         "template": "uniform",
-        "block": {"name": "ThermalFoundation:Ore", "metadata": 4},
+        "block": [
+			{"name": "ThermalFoundation:Ore", "metadata": 4, "weight":50},
+			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":50}
+		],
         "clusterSize": 4,
         "numClusters": 3,
         "minHeight": 5,
@@ -100,7 +135,9 @@
         "generator": "sparse-cluster",
         "block": [
             {"name": "ThermalFoundation:Ore", "metadata": 5, "weight": 80},
-            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 20}
+			{"name": "Metallurgy:precious.ore", "metadata": 2, "weight":80},
+            {"name": "ThermalFoundation:Ore", "metadata": 4, "weight": 20},
+			{"name": "ImmersiveEngineering:ore", "metadata": 4, "weight":20}
         ],
         "clusterSize": 3,
         "numClusters": 1,
@@ -119,11 +156,21 @@
     },
     "copperHigh": {
         "template": "uniform",
-        "block": "ThermalFoundation:Ore",
+        "block": [
+			{"name": "IC2:blockOreCopper", "metadata": 0, "weight":90},
+			{"name": "ImmersiveEngineering:ore", "weight":90},
+			{"name": "Mekanism:OreBlock", "metadata": 1, "weight":90},
+			{"name": "Metallurgy:base.ore", "metadata": 0, "weight":90},
+			{"name": "ProjRed|Exploration:projectred.exploration.ore", "metadata": 3, "weight":90},
+			{"name": "Steamcraft:steamcraftOre", "metadata": 0, "weight":90},
+			{"name": "TConstruct:SearedBrick", "metadata": 3, "weight":90},
+			{"name": "ThermalFoundation:Ore", "metadata": 0, "weight":90},
+			{"name": "Railcraft:ore", "metadata": 9, "weight":80}
+		],
         "clusterSize": 8,
-        "numClusters": 8,
+        "numClusters": 40,
         "minHeight": 48,
-        "maxHeight": 96,
+        "maxHeight": 256,
         "retrogen": "true",
         "biomeRestriction": "none",
         "biomes": [
